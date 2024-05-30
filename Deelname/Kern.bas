@@ -262,7 +262,7 @@ End Sub
 'Deze procedure toont de informatie over dit programma.
 Public Sub ToonProgrammainformatie()
 On Error GoTo Fout
-   MsgBox "Deelname Teller " & App.Major & "." & App.Minor & App.Revision & ", door: " & App.CompanyName, vbInformation
+   MsgBox App.Comments, vbInformation, App.Title & " v" & App.Major & "." & App.Minor & App.Revision & ", door: " & App.CompanyName
 EindeProcedure:
    Exit Sub
 
